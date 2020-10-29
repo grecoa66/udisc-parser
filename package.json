@@ -1,0 +1,11 @@
+{
+  "name": "discGolf",
+  "version": "1.0.0",
+  "description": "Some Scripts to Parse Udisc data",
+  "main": "index.js",
+  "author": "Alex Greco",
+  "license": "MIT",
+  "dependencies": {
+    "yargs": "^16.1.0"
+  }
+}
