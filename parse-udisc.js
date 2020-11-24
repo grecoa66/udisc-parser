@@ -3,12 +3,11 @@
 const argv = require('yargs/yargs')(process.argv.slice(2)).argv;
 const csvParser = require("csvtojson");
 
-console.log('File Path', argv.inputFile);
+
 const parseUdisc = async () => { 
-  const result =  await csvParser().fromFile(argv.inputFile);
+  const result = await csvParser().fromFile('udisc_scorecards.csv'); 
   
-  console.log('Records: ', JSON.stringify(result, null, 2));
+  return result;
 }
 
-parseUdisc();
-
+exports.parseUdisc = parseUdisc;
