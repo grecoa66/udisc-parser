@@ -1,7 +1,7 @@
 
 const getRoundsByPlayer = (rounds, name) => {
   return rounds.filter(round => {
-    return round.PlayerName === name;
+    return round.PlayerName.toLowerCase() === name.toLowerCase();
   })
 }
 
