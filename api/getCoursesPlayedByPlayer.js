@@ -19,7 +19,6 @@ const getCoursesPlayedByPlayer = (rounds, playerName) => {
       });
     }
   });
-  console.log(courses);
 
   return courses.sort((a,b) => {
     if(a.roundsPlayed > b.roundsPlayed){
